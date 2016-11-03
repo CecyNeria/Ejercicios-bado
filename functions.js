@@ -14,7 +14,7 @@ console.log(computadora);
 	}else if (computadora == 2){
 		computadora = "papel";
 	}else if (computadora == 3){
-		computadora = "tijera";
+		computadora = "tijeras";
 	}
 console.log(computadora);
 comparar(jugador, computadora);
@@ -28,34 +28,34 @@ console.log("Computadora escogió: "+ computadora + ".\n" +
 // Comparación de elecciones y su resultado
 function comparar(jugador, computadora){
 if(jugador === computadora){
-resultado = "¡Es un empate!";
-return resultado;
+	resultado = "¡Es un empate!";
+	return resultado;
 }
 if(jugador === "piedra"){
-if(computadora === "tijera"){
-	resultado = "¡Piedra gana!";
-	return resultado;
-} else {
-	resultado = "¡Papel gana!";
-	return resultado;
+	if(computadora === "tijeras"){
+		resultado = "¡Piedra gana!";
+		return resultado;
+	} else {
+		resultado = "¡Papel gana!";
+		return resultado;
 	}
 }
 if(jugador === "papel"){
-if(computadora === "piedra"){
-	resultado = "¡Papel gana!";
-	return resultado;
-} else {
-	resultado = "¡Tijera gana!";
-	return resultado;
+	if(computadora === "piedra"){
+		resultado = "¡Papel gana!";
+		return resultado;
+	} else {
+		resultado = "¡Tijeras gana!";
+		return resultado;
 	}
 }
-if(jugador === "tijera"){
-if(computadora === "papel"){
-	resultado = "¡Tijera gana!";
-	return resultado;
-} else {
-	resultado = "¡Piedra gana!";
-	return resultado;
-	}
-  }
+if(jugador === "tijeras"){
+	if(computadora === "papel"){
+		resultado = "¡Tijeras gana!";
+		return resultado;
+	} else {
+		resultado = "¡Piedra gana!";
+		return resultado;
+		}
+  	}
 } 
