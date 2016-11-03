@@ -1,11 +1,12 @@
 body{
-	background-color: #26c6da
+	background-color: #00acc1;
 }
 
-#título{
+.título{
 	text-align: center;
-	font-size: 40px;
-	color: #ffffff
-	weight: bold;
-}
+	font-weight: bold;
+	font-size: 60px;
+	color: #ffffff;
+	font-family: 'Sansita One', cursive;
+} 
 
